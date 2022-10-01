@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Weather</title>
+        <link rel="stylesheet" href="weather.css">
+        <script src="weather.js"></script>
+    </head>
+
+    <body>
+        <div class="card">
+            <form novalidate>
+                <h2>Weather <span id = "place">Checker</span></h2>
+                <input type = "text" placeholder = "Find your location" id = "location">
+                
+                <br>
+                <input type="radio" id="celsius" name="unit" value="Celsius">
+                <label for="celsius">Celsius</label>
+                <input type="radio" id="farenheit" name="unit" value="Fahrenheit ">
+                <label for="farenheit">Fahrenheit </label><br>
+                <button type="button" onclick="onClick()">check!</button>
+                <br>
+            </form>
+            <br>
+            <p>Temperature in <span id="temperature"></span><span id = "metric"></span></p>
+            <p>Humidity : <span id="humidity"></span>%</p>
+            <p>Precipitation : 3%</p>
+        </div>
+
+    </body>
+
+</html>
